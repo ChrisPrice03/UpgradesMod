@@ -26,6 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.squawknog.upgradesmod.block.ModBlocks;
 import net.squawknog.upgradesmod.item.ModCreativeModeTabs;
 import net.squawknog.upgradesmod.item.ModItems;
 import org.slf4j.Logger;
@@ -50,6 +51,7 @@ public class UpgradesMod
 
         //new blocks and items
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

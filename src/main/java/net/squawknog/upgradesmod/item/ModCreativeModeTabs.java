@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.squawknog.upgradesmod.UpgradesMod;
+import net.squawknog.upgradesmod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //add items here
                         output.accept(ModItems.UPGRADE_TOKEN.get());
+                        output.accept(ModBlocks.GENERIC_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

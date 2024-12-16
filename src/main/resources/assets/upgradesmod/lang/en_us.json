@@ -1,5 +1,7 @@
 {
   "item.upgradesmod.upgrade_token": "Upgrade Token",
 
+  "block.upgradesmod.generic_upgrader": "Generic Upgrader",
+
   "creativetab.upgradesmod.upgrade_items": "Upgrade Items"
 }
