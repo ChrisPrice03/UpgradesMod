@@ -2,6 +2,7 @@
   "item.upgradesmod.upgrade_token": "Upgrade Token",
 
   "block.upgradesmod.generic_upgrader": "Generic Upgrader",
+  "block.upgradesmod.luck_upgrader": "Luck Upgrader",
 
   "creativetab.upgradesmod.upgrade_items": "Upgrade Items"
 }

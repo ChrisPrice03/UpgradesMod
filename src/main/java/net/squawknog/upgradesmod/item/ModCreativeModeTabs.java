@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         //add items here
                         output.accept(ModItems.UPGRADE_TOKEN.get());
                         output.accept(ModBlocks.GENERIC_UPGRADER.get());
+                        output.accept(ModBlocks.LUCK_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

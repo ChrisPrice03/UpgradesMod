@@ -18,8 +18,12 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, UpgradesMod.MOD_ID);
 
-    //define blocks (no drops yet)
+    //define blocks
     public static final RegistryObject<Block> GENERIC_UPGRADER = registerBlock("generic_upgrader",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> LUCK_UPGRADER = registerBlock("luck_upgrader",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
