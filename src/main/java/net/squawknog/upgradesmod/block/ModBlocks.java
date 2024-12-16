@@ -1,6 +1,7 @@
 package net.squawknog.upgradesmod.block;
 
 import net.squawknog.upgradesmod.UpgradesMod;
+import net.squawknog.upgradesmod.block.custom.LuckUpgraderBlock;
 import net.squawknog.upgradesmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,7 +25,7 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> LUCK_UPGRADER = registerBlock("luck_upgrader",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new LuckUpgraderBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
