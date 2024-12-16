@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "GDG",
+    "WNW",
+    "OOO"
+  ],
+  "result": {
+    "count": 5,
+    "id": "upgradesmod:generic_upgrader"
+  }
+}
