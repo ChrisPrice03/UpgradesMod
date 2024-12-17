@@ -29,6 +29,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.squawknog.upgradesmod.block.ModBlocks;
 import net.squawknog.upgradesmod.item.ModCreativeModeTabs;
 import net.squawknog.upgradesmod.item.ModItems;
+import net.squawknog.upgradesmod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -52,6 +53,9 @@ public class UpgradesMod
         //new blocks and items
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        //registering menus
+        ModMenuTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

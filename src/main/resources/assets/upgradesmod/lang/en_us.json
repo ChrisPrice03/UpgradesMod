@@ -1,8 +1,11 @@
 {
   "item.upgradesmod.upgrade_token": "Upgrade Token",
+  "item.upgradesmod.upgrade_interface": "Upgrade Interface",
 
   "block.upgradesmod.generic_upgrader": "Generic Upgrader",
   "block.upgradesmod.luck_upgrader": "Luck Upgrader",
 
-  "creativetab.upgradesmod.upgrade_items": "Upgrade Items"
+  "creativetab.upgradesmod.upgrade_items": "Upgrade Items",
+
+  "screen.upgradesmod.upgrade_interface": "Upgrade Interface"
 }

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.squawknog.upgradesmod.UpgradesMod;
+import net.squawknog.upgradesmod.item.custom.UpgradeInterfaceItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -14,6 +15,9 @@ public class ModItems {
     //defining new items
     public static final RegistryObject<Item> UPGRADE_TOKEN = ITEMS.register("upgrade_token",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> UPGRADE_INTERFACE = ITEMS.register("upgrade_interface",
+            () -> new UpgradeInterfaceItem(new Item.Properties().stacksTo(1)));
 
     //method to register items
     public static void register(IEventBus eventBus) {

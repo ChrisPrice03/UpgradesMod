@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //add items here
                         output.accept(ModItems.UPGRADE_TOKEN.get());
+                        output.accept(ModItems.UPGRADE_INTERFACE.get());
                         output.accept(ModBlocks.GENERIC_UPGRADER.get());
                         output.accept(ModBlocks.LUCK_UPGRADER.get());
                     }).build());
