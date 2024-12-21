@@ -10,6 +10,7 @@
     "upgradesmod:teleportation_upgrader",
     "upgradesmod:strength_upgrader",
     "upgradesmod:haste_upgrader",
-    "upgradesmod:fortune_upgrader"
+    "upgradesmod:fortune_upgrader",
+    "upgradesmod:flame_upgrader"
   ]
 }

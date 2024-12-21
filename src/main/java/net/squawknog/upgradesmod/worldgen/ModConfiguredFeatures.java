@@ -28,6 +28,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> STRENGTH_UPGRADER_KEY = registerKey("strength_upgrader");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HASTE_UPGRADER_KEY = registerKey("haste_upgrader");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FORTUNE_UPGRADER_KEY = registerKey("fortune_upgrader");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FLAME_UPGRADER_KEY = registerKey("flame_upgrader");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -74,6 +75,11 @@ public class ModConfiguredFeatures {
         register(context, FORTUNE_UPGRADER_KEY, Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(
                         BlockStateProvider.simple(ModBlocks.FORTUNE_UPGRADER.get().defaultBlockState())
+                ));
+
+        register(context, FLAME_UPGRADER_KEY, Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(
+                        BlockStateProvider.simple(ModBlocks.FLAME_UPGRADER.get().defaultBlockState())
                 ));
 
     }
