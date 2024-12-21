@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "upgradesmod:block/fortune_upgrader"
+    }
+  }
+}

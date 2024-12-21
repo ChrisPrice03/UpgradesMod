@@ -9,6 +9,7 @@
     "upgradesmod:summoning_upgrader",
     "upgradesmod:teleportation_upgrader",
     "upgradesmod:strength_upgrader",
-    "upgradesmod:haste_upgrader"
+    "upgradesmod:haste_upgrader",
+    "upgradesmod:fortune_upgrader"
   ]
 }

@@ -25,6 +25,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> TELEPORTATION_UPGRADER_PLACED_KEY = registerKey("teleportation_upgrader_placed");
     public static final ResourceKey<PlacedFeature> STRENGTH_UPGRADER_PLACED_KEY = registerKey("strength_upgrader_placed");
     public static final ResourceKey<PlacedFeature> HASTE_UPGRADER_PLACED_KEY = registerKey("haste_upgrader_placed");
+    public static final ResourceKey<PlacedFeature> FORTUNE_UPGRADER_PLACED_KEY = registerKey("fortune_upgrader_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -89,6 +90,14 @@ public class ModPlacedFeatures {
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.HASTE_UPGRADER_KEY),
                 List.of(
                         RarityFilter.onAverageOnceEvery(128), // Controls the rarity of spawning
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
+                        BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
+                ));
+
+        register(context, FORTUNE_UPGRADER_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.FORTUNE_UPGRADER_KEY),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(192), // Controls the rarity of spawning
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
                         BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
                 ));

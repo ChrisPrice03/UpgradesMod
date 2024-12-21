@@ -51,6 +51,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> HASTE_UPGRADER = registerBlock("haste_upgrader",
             () -> new HasteUpgraderBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> FORTUNE_UPGRADER = registerBlock("fortune_upgrader",
+            () -> new FortuneUpgraderBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     //blocks to items
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

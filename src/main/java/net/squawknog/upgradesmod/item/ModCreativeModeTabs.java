@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TELEPORTATION_UPGRADER.get());
                         output.accept(ModBlocks.STRENGTH_UPGRADER.get());
                         output.accept(ModBlocks.HASTE_UPGRADER.get());
+                        output.accept(ModBlocks.FORTUNE_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

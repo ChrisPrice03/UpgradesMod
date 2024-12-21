@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "U": {
+      "item": "upgradesmod:generic_upgrader"
+    }
+  },
+  "pattern": [
+    " E ",
+    "EUE",
+    " E "
+  ],
+  "result": {
+    "count": 1,
+    "id": "upgradesmod:fortune_upgrader"
+  }
+}
