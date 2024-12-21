@@ -6,6 +6,7 @@
     "east": "upgradesmod:block/luck_upgrader_side",
     "west": "upgradesmod:block/luck_upgrader_side",
     "up": "upgradesmod:block/generic_upgrader_top",
-    "down": "upgradesmod:block/generic_upgrader_bottom"
+    "down": "upgradesmod:block/generic_upgrader_bottom",
+    "particle": "upgradesmod:block/luck_upgrader_side"
   }
 }
