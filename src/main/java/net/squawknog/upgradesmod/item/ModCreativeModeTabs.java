@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GENERIC_UPGRADER.get());
                         output.accept(ModBlocks.LUCK_UPGRADER.get());
                         output.accept(ModBlocks.SATURATION_UPGRADER.get());
+                        output.accept(ModBlocks.SPEED_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

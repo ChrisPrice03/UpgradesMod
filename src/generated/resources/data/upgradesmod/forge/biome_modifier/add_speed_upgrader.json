@@ -59,6 +59,6 @@
     "minecraft:wooded_badlands",
     "minecraft:flower_forest"
   ],
-  "features": "upgradesmod:saturation_upgrader_placed",
+  "features": "upgradesmod:speed_upgrader_placed",
   "step": "vegetal_decoration"
 }

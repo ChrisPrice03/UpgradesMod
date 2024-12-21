@@ -69,7 +69,7 @@ public class UpgradeInterfaceItem extends Item {
         int health = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.healthUpgrade");
         int summoning = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.summoningUpgrade");
         int teleportation = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.teleportationUpgrade");
-        int damage = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.damageUpgrade");
+        int damage = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.strengthUpgrade");
         int haste = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.hasteUpgrade");
         int fortune = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.fortuneUpgrade");
         int luck = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.luckUpgrade");

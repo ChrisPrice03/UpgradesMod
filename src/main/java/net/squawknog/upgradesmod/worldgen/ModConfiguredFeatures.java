@@ -21,6 +21,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LUCK_UPGRADER_KEY = registerKey("luck_upgrader");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SATURATION_UPGRADER_KEY = registerKey("saturation_upgrader");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SPEED_UPGRADER_KEY = registerKey("speed_upgrader");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -32,6 +33,11 @@ public class ModConfiguredFeatures {
         register(context, SATURATION_UPGRADER_KEY, Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(
                         BlockStateProvider.simple(ModBlocks.SATURATION_UPGRADER.get().defaultBlockState())
+                ));
+
+        register(context, SPEED_UPGRADER_KEY, Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(
+                        BlockStateProvider.simple(ModBlocks.SPEED_UPGRADER.get().defaultBlockState())
                 ));
     }
 

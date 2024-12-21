@@ -16,6 +16,7 @@ public class ModBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_LUCK_UPGRADER = registerKey("add_luck_upgrader");
     public static final ResourceKey<BiomeModifier> ADD_SATURATION_UPGRADER = registerKey("add_saturation_upgrader");
+    public static final ResourceKey<BiomeModifier> ADD_SPEED_UPGRADER = registerKey("add_speed_upgrader");
 
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
@@ -84,7 +85,7 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.LUCK_UPGRADER_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(ADD_SATURATION_UPGRADER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_SPEED_UPGRADER, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(
                         biomes.getOrThrow(Biomes.PLAINS),
                         biomes.getOrThrow(Biomes.BADLANDS),
@@ -143,7 +144,7 @@ public class ModBiomeModifiers {
                         biomes.getOrThrow(Biomes.WINDSWEPT_GRAVELLY_HILLS),
                         biomes.getOrThrow(Biomes.WOODED_BADLANDS),
                         biomes.getOrThrow(Biomes.FLOWER_FOREST)),
-                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.SATURATION_UPGRADER_PLACED_KEY)),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.SPEED_UPGRADER_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 

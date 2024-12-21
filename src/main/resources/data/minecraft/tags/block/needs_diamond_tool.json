@@ -3,6 +3,7 @@
   "values": [
     "upgradesmod:generic_upgrader",
     "upgradesmod:luck_upgrader",
-    "upgradesmod:saturation_upgrader"
+    "upgradesmod:saturation_upgrader",
+    "upgradesmod:speed_upgrader"
   ]
 }
