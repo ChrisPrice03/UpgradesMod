@@ -21,6 +21,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SATURATION_UPGRADER_PLACED_KEY = registerKey("saturation_upgrader_placed");
     public static final ResourceKey<PlacedFeature> SPEED_UPGRADER_PLACED_KEY = registerKey("speed_upgrader_placed");
     public static final ResourceKey<PlacedFeature> HEALTH_UPGRADER_PLACED_KEY = registerKey("health_upgrader_placed");
+    public static final ResourceKey<PlacedFeature> SUMMONING_UPGRADER_PLACED_KEY = registerKey("summoning_upgrader_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -48,10 +49,19 @@ public class ModPlacedFeatures {
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
                         BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
                 ));
+
         register(context, HEALTH_UPGRADER_PLACED_KEY,
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.HEALTH_UPGRADER_KEY),
                 List.of(
                         RarityFilter.onAverageOnceEvery(128), // Controls the rarity of spawning
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
+                        BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
+                ));
+
+        register(context, SUMMONING_UPGRADER_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.SUMMONGING_UPGRADER_KEY),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(256), // Controls the rarity of spawning
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
                         BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
                 ));

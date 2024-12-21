@@ -5,6 +5,7 @@
     "upgradesmod:luck_upgrader",
     "upgradesmod:saturation_upgrader",
     "upgradesmod:speed_upgrader",
-    "upgradesmod:health_upgrader"
+    "upgradesmod:health_upgrader",
+    "upgradesmod:summoning_upgrader"
   ]
 }

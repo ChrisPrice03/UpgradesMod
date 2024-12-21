@@ -23,6 +23,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SATURATION_UPGRADER_KEY = registerKey("saturation_upgrader");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SPEED_UPGRADER_KEY = registerKey("speed_upgrader");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HEALTH_UPGRADER_KEY = registerKey("health_upgrader");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SUMMONGING_UPGRADER_KEY = registerKey("summoning_upgrader");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -45,6 +46,12 @@ public class ModConfiguredFeatures {
                 new SimpleBlockConfiguration(
                         BlockStateProvider.simple(ModBlocks.HEALTH_UPGRADER.get().defaultBlockState())
                 ));
+
+        register(context, SUMMONGING_UPGRADER_KEY, Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(
+                        BlockStateProvider.simple(ModBlocks.SUMMONING_UPGRADER.get().defaultBlockState())
+                ));
+
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
