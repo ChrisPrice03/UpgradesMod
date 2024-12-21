@@ -6,6 +6,7 @@
     "upgradesmod:saturation_upgrader",
     "upgradesmod:speed_upgrader",
     "upgradesmod:health_upgrader",
-    "upgradesmod:summoning_upgrader"
+    "upgradesmod:summoning_upgrader",
+    "upgradesmod:teleportation_upgrader"
   ]
 }

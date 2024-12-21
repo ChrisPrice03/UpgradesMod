@@ -42,6 +42,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SUMMONING_UPGRADER = registerBlock("summoning_upgrader",
             () -> new SummoningUpgraderBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> TELEPORTATION_UPGRADER = registerBlock("teleportation_upgrader",
+            () -> new TeleportationUpgraderBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     //blocks to items
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
