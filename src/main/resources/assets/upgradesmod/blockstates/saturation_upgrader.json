@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "upgradesmod:block/saturation_upgrader"
+    }
+  }
+}

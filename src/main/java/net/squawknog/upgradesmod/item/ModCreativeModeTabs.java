@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.UPGRADE_INTERFACE.get());
                         output.accept(ModBlocks.GENERIC_UPGRADER.get());
                         output.accept(ModBlocks.LUCK_UPGRADER.get());
+                        output.accept(ModBlocks.SATURATION_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -18,6 +18,7 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> LUCK_UPGRADER_PLACED_KEY = registerKey("luck_upgrader_placed");
+    public static final ResourceKey<PlacedFeature> SATURATION_UPGRADER_PLACED_KEY = registerKey("saturation_upgrader_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -26,6 +27,14 @@ public class ModPlacedFeatures {
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.LUCK_UPGRADER_KEY),
                 List.of(
                         RarityFilter.onAverageOnceEvery(256), // Controls the rarity of spawning
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
+                        BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
+                ));
+
+        register(context, SATURATION_UPGRADER_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.SATURATION_UPGRADER_KEY),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(128), // Controls the rarity of spawning
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE, // Spawns at the world surface
                         BiomeFilter.biome() // Make it spawn in any biome (adjust as needed)
                 ));

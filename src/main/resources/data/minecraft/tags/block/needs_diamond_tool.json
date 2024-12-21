@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "upgradesmod:generic_upgrader",
-    "upgradesmod:luck_upgrader"
+    "upgradesmod:luck_upgrader",
+    "upgradesmod:saturation_upgrader"
   ]
 }

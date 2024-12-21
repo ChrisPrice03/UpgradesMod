@@ -1,4 +1,7 @@
-// 1.21.1	2024-12-17T20:36:43.5740767	Registries
+// 1.21.1	2024-12-21T14:49:52.7090373	Registries
 bba7983420de5d128bea6d0c962650f980e2ccb2 data/upgradesmod/forge/biome_modifier/add_luck_upgrader.json
+0c3d8973eade4bf255806bd9c3cad766e1fc136a data/upgradesmod/forge/biome_modifier/add_saturation_upgrader.json
 fb3941192282eac3489789f5410017a740ca003d data/upgradesmod/worldgen/configured_feature/luck_upgrader.json
+140655eca5ffa5f90fe6a11013087ad370e54528 data/upgradesmod/worldgen/configured_feature/saturation_upgrader.json
 7d34a8d88b693da52e275021e922e4f7f10c25bf data/upgradesmod/worldgen/placed_feature/luck_upgrader_placed.json
+0c8939c115a4c680427f7692fd18c5e7f8f521a3 data/upgradesmod/worldgen/placed_feature/saturation_upgrader_placed.json
