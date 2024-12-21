@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "north": "upgradesmod:block/haste_upgrader_side",
+    "south": "upgradesmod:block/haste_upgrader_side",
+    "east": "upgradesmod:block/haste_upgrader_side",
+    "west": "upgradesmod:block/haste_upgrader_side",
+    "up": "upgradesmod:block/generic_upgrader_top",
+    "down": "upgradesmod:block/generic_upgrader_bottom"
+  }
+}

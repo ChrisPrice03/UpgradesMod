@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "U": {
+      "item": "upgradesmod:generic_upgrader"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IUI",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "upgradesmod:haste_upgrader"
+  }
+}
