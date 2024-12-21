@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:golden_apple"
+    },
+    "U": {
+      "item": "upgradesmod:generic_upgrader"
+    }
+  },
+  "pattern": [
+    " G ",
+    "GUG",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "upgradesmod:health_upgrader"
+  }
+}

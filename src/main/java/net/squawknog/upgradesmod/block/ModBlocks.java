@@ -1,6 +1,7 @@
 package net.squawknog.upgradesmod.block;
 
 import net.squawknog.upgradesmod.UpgradesMod;
+import net.squawknog.upgradesmod.block.custom.HealthUpgraderBlock;
 import net.squawknog.upgradesmod.block.custom.LuckUpgraderBlock;
 import net.squawknog.upgradesmod.block.custom.SaturationUpgraderBlock;
 import net.squawknog.upgradesmod.block.custom.SpeedUpgraderBlock;
@@ -36,6 +37,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SPEED_UPGRADER = registerBlock("speed_upgrader",
             () -> new SpeedUpgraderBlock(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> HEALTH_UPGRADER = registerBlock("health_upgrader",
+            () -> new HealthUpgraderBlock(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     //blocks to items
