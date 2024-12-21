@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HEALTH_UPGRADER.get());
                         output.accept(ModBlocks.SUMMONING_UPGRADER.get());
                         output.accept(ModBlocks.TELEPORTATION_UPGRADER.get());
+                        output.accept(ModBlocks.STRENGTH_UPGRADER.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

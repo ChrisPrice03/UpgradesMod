@@ -25,9 +25,6 @@ public class UpgradeInterfaceItem extends Item {
             return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
         }
 
-//        Minecraft.getInstance().setScreen(new UpgradeInterfaceScreen(null, pPlayer.getInventory(),
-//                Component.translatable("screen.upgradesmod.upgrade_interface")));
-
         Minecraft.getInstance().setScreen(new UpgradeInterfaceScreen(Component.translatable("screen.upgradesmod.upgrade_interface")));
 
 
@@ -41,7 +38,7 @@ public class UpgradeInterfaceItem extends Item {
         int health = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.healthUpgrade");
         int summoning = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.summoningUpgrade");
         int teleportation = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.teleportationUpgrade");
-        int damage = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.damageUpgrade");
+        int strength = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.strengthUpgrade");
         int haste = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.hasteUpgrade");
         int fortune = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.fortuneUpgrade");
         int luck = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.luckUpgrade");
@@ -54,7 +51,7 @@ public class UpgradeInterfaceItem extends Item {
                 "Health: " + health + "\n" +
                 "Summoning: " + summoning + "\n" +
                 "Teleportation: " + teleportation + "\n\n" +
-                "Damage: " + damage + "\n" +
+                "Strength: " + strength + "\n" +
                 "Haste: " + haste + "\n" +
                 "Fortune: " + fortune + "\n\n" +
                 "Luck: " + luck + "\n\n" +
@@ -69,13 +66,13 @@ public class UpgradeInterfaceItem extends Item {
         int health = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.healthUpgrade");
         int summoning = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.summoningUpgrade");
         int teleportation = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.teleportationUpgrade");
-        int damage = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.strengthUpgrade");
+        int strength = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.strengthUpgrade");
         int haste = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.hasteUpgrade");
         int fortune = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.fortuneUpgrade");
         int luck = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.luckUpgrade");
         int flame = UpgradeHandler.getUpgradeLevel(pPlayer, "upgradesmod.flameUpgrade");
 
-        // Build the text to display the "luck" skill and its level
+        // Build the text to display the skills and levels
         return "Abilities:\n" +
                 "Bonus " + saturation + " Saturation\n" +
                 "Bonus " + speed + "% Movespeed\n" +
@@ -83,7 +80,7 @@ public class UpgradeInterfaceItem extends Item {
                 "Can Summon " + summoning + " Mobs\n" +
                 "Can teleport up to " + teleportation + "\n" +
                 "blocks\n" +
-                "Deals " + damage + "% more damage\n" +
+                "Deals " + strength + "% more damage\n" +
                 "Mines " + haste + "% faster\n" +
                 "Has " + fortune + "% chance to\n" +
                 "double a mined block\n" +

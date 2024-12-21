@@ -1,9 +1,9 @@
 {
-  "feature": "upgradesmod:teleportation_upgrader",
+  "feature": "upgradesmod:strength_upgrader",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 192
+      "chance": 128
     },
     {
       "type": "minecraft:heightmap",
